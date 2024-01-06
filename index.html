@@ -35,14 +35,14 @@
              if (optDelux.checked)
              {
                 
-                 roomCost= 2500 * days;
+                 roomCost= 1500 * days;
                  roomType= optDelux.value;
                  imgRoom.src="../public/images/delux.jpg";
                  
              }
              if(optSuite.checked)
              {
-                 roomCost= 4000 * days;
+                 roomCost= 3000 * days;
                  roomType= optSuite.value;
                  imgRoom.src="../public/images/suite.jpeg";
 
@@ -76,8 +76,14 @@
 
 
         }
-        
+
         </script>
+        <style>
+            a{
+                text-decoration: none;
+                color:black;
+            }
+        </style>
     </head>
     <body class="container-fluid" style="background-color: goldenrod;">
         <header>
@@ -91,7 +97,7 @@
         </header>
         <section>
            
-            <center><h1 style="color:white; font-size: large;" class="mt-4"><b>Registration Form</b></h1></center>
+            <center><h1 style="color:white; font-size: large;" class="mt-5"><b>Registration Form</b></h1></center>
             <center>
             <div class="accordion tab-content" id="registerForm">
                 <div class="accordion-item tab-pane active"  id="customer">
@@ -134,7 +140,7 @@
                     <div class="card">
                     <img src="./public/images/delux.jpg" height="200" class="card-img-top">
                     <div class="card-header">
-                    <input type="radio" name="room" value="Delux Room" id="optDelux" class="form-check-input"> Delux Room
+                    <input type="radio" name="room" value="Delux Room" id="optDelux" class="form-check-input"><span> Delux Room <br> (&#8377;1500/day )</span>
                     </div>
                     </div>
                     </div>
@@ -142,7 +148,7 @@
                     <div class="card">
                     <img src="./public/images/suite.jpeg" height="200" class="card-img-top">
                     <div class="card-header">
-                    <input type="radio" name="room" value="Suite Room" id="optSuite" class="form-check-input">Suite Room
+                    <input type="radio" name="room" value="Suite Room" id="optSuite" class="form-check-input"><span>Suite Room<br>(&#8377; 3000/day)</span>
                     </div>
                     </div>
                     </div>
@@ -164,7 +170,7 @@
                     <div class="card">
                     <img src="./public/images/wall-ac.jpg" height="200" class="card-img-top">
                     <div class="card-header">
-                    <input type="checkbox" name="amenities" value="Ac" id="optAc" class="form-check-input">A/C
+                    <input type="checkbox" name="amenities" value="Ac" id="optAc" class="form-check-input"><span>A/C<br/>(&#8377;1000/day)</span>
                     </div>
                     </div>
                     </div>
@@ -172,7 +178,7 @@
                     <div class="card">
                     <img src="./public/images/locker.jpg" height="200" class="card-img-top">
                     <div class="card-header">
-                    <input type="checkbox" name="amenities" value="Locker" id="optLocker" class="form-check-input">Locker
+                    <input type="checkbox" name="amenities" value="Locker" id="optLocker" class="form-check-input"><span>Locker<br/>(&#8377;300/day)</span>
                     </div>
                     </div>
                     </div>
