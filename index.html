@@ -73,10 +73,7 @@
              document.getElementById("lblRoom").innerHTML= roomType;
              document.getElementById("lblAmenities").innerHTML = AmenitiesName;
              document.getElementById("lblBalance").innerHTML = totalAmount;
-
-
         }
-
         </script>
         <style>
             a{
@@ -96,10 +93,10 @@
             </div>
         </header>
         <section>
-           
             <center><h1 style="color:white; font-size: large;" class="mt-5"><b>Registration Form</b></h1></center>
             <center>
             <div class="accordion tab-content" id="registerForm">
+
                 <div class="accordion-item tab-pane active"  id="customer">
                     <h2 class="accordion-header d-grid ">
                         <button style="background-color: black; color:white;" class="btn" data-bs-toggle="collapse" data-bs-target="#customer">Customer Info</button>
@@ -116,17 +113,16 @@
                             </div>
                             <div class="mt-2 ">
                                 <span class="">Total No. of Days &nbsp; &nbsp; </span>
-                                <span class=""><input type="number" id="txtDays"></span>
+                                <span class=""><input type="number" id="txtDays" min="1"></span>
                             </div>
                             <div class="mt-2 ">
                                 <span class="">Total No. of Person &nbsp; &nbsp; </span>
-                                <span class=""><input type="number" id="txtPerson"></span>
+                                <span class=""><input type="number" id="txtPerson" min="1"></span>
                             </div>
                             </div>
                             </div>
                 </div>
                 <!----nexttttt1-->
-                   
                 <div class="accordion-item tab-pane" id="roomType">
                     <h2 class="accordion-header d-grid">
                     <button class="btn" style="background-color: black; color:white;" data-bs-toggle="collapse" data-bs-target="#room">
@@ -231,6 +227,7 @@
                                     </dl>
                                     <div class="col">
                                         <img id="imgRoom" width="100%">
+                                        <p>Increment of &#8377;1000 per person starting 3rd person onwards. </p>
                                     </div>
                                 </div>
                                     <div class="modal-footer">
